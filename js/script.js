@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     document
-        .querySelectorAll(".producto-card, .categoria-card, .caracteristica, .stat-card, .contacto-info")
+        .querySelectorAll(".producto-card, .categoria-card, .caracteristica, .stat-card, .contacto-info, .welcome-card, .visual-card")
         .forEach((item) => {
             item.style.opacity = "0";
             item.style.transform = "translateY(10px)";
