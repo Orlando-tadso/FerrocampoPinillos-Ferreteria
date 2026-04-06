@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Ferrocampo Pinillos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html" aria-label="Ir al inicio">
+                <span class="logo-mark">FP</span>
+                <span class="logo-text">Ferrocampo Pinillos</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-productos">
+            <div class="container hero-content">
+                <p class="kicker">Catalogo inteligente</p>
+                <h1>Los productos mas vendidos de la ferreteria</h1>
+                <p>Dejamos solo los productos con mayor salida en tarjetas para que cargue rapido. El resto del inventario lo encuentras abajo en una tabla ligera con precios actualizados.</p>
+                <a href="#mas-vendidos" class="btn-primary">Ver mas vendidos</a>
+            </div>
+        </section>
+
+        <section class="productos-section" id="mas-vendidos">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Top 24 mas vendidos</h2>
+                    <p>Seleccion de productos comunes que mas se mueven en una ferreteria.</p>
+                </div>
+
+                <div class="filtros" aria-label="Filtros de categoria">
+                    <button class="filtro-btn active" data-categoria="todas">Todas</button>
+                    <button class="filtro-btn" data-categoria="herramientas">Herramientas</button>
+                    <button class="filtro-btn" data-categoria="pinturas">Pinturas</button>
+                    <button class="filtro-btn" data-categoria="electricidad">Electricidad</button>
+                    <button class="filtro-btn" data-categoria="construccion">Construccion</button>
+                    <button class="filtro-btn" data-categoria="plomeria">Plomeria</button>
+                    <button class="filtro-btn" data-categoria="ferreteria">Ferreteria</button>
+                </div>
+
+                <div class="buscador">
+                    <label for="search-input" class="sr-only">Buscar en el catalogo</label>
+                    <input type="text" id="search-input" placeholder="Busca por nombre o categoria...">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                </div>
+
+                <div class="productos-grid" id="productos-grid">
+                    <article class="producto-card" data-categoria="herramientas">
+                        <div class="producto-imagen"><i class="fas fa-hammer"></i></div>
+                        <h3>Martillo carpintero 16 oz</h3>
+                        <p class="producto-descripcion">Mango antideslizante y cabeza templada.</p>
+                        <p class="producto-precio">$25.000</p>
+                        <span class="categoria-tag">Herramientas</span>
+                    </article>
+                    <article class="producto-card" data-categoria="herramientas">
+                        <div class="producto-imagen"><i class="fas fa-screwdriver"></i></div>
+                        <h3>Juego de destornilladores x6</h3>
+                        <p class="producto-descripcion">Punta plana y estrella para trabajo diario.</p>
+                        <p class="producto-precio">$35.000</p>
+                        <span class="categoria-tag">Herramientas</span>
+                    </article>
+                    <article class="producto-card" data-categoria="herramientas">
+                        <div class="producto-imagen"><i class="fas fa-wrench"></i></div>
+                        <h3>Llaves combinadas x12</h3>
+                        <p class="producto-descripcion">Set de 8 mm a 19 mm en cromo vanadio.</p>
+                        <p class="producto-precio">$85.000</p>
+                        <span class="categoria-tag">Herramientas</span>
+                    </article>
+                    <article class="producto-card" data-categoria="herramientas">
+                        <div class="producto-imagen"><i class="fas fa-ruler-combined"></i></div>
+                        <h3>Flexometro 5 metros</h3>
+                        <p class="producto-descripcion">Bloqueo rapido y gancho magnetico.</p>
+                        <p class="producto-precio">$18.000</p>
+                        <span class="categoria-tag">Herramientas</span>
+                    </article>
+
+                    <article class="producto-card" data-categoria="pinturas">
+                        <div class="producto-imagen"><i class="fas fa-fill-drip"></i></div>
+                        <h3>Pintura vinilo blanco galon</h3>
+                        <p class="producto-descripcion">Acabado mate de alto cubrimiento.</p>
+                        <p class="producto-precio">$55.000</p>
+                        <span class="categoria-tag">Pinturas</span>
+                    </article>
+                    <article class="producto-card" data-categoria="pinturas">
+                        <div class="producto-imagen"><i class="fas fa-paint-roller"></i></div>
+                        <h3>Rodillo 9 pulgadas</h3>
+                        <p class="producto-descripcion">Ideal para pared lisa, incluye bandeja.</p>
+                        <p class="producto-precio">$22.000</p>
+                        <span class="categoria-tag">Pinturas</span>
+                    </article>
+                    <article class="producto-card" data-categoria="pinturas">
+                        <div class="producto-imagen"><i class="fas fa-brush"></i></div>
+                        <h3>Brocha profesional 3"</h3>
+                        <p class="producto-descripcion">Cerda natural para esmaltes y vinilos.</p>
+                        <p class="producto-precio">$18.000</p>
+                        <span class="categoria-tag">Pinturas</span>
+                    </article>
+                    <article class="producto-card" data-categoria="pinturas">
+                        <div class="producto-imagen"><i class="fas fa-spray-can"></i></div>
+                        <h3>Pintura en spray 400 ml</h3>
+                        <p class="producto-descripcion">Secado rapido para metal y madera.</p>
+                        <p class="producto-precio">$22.000</p>
+                        <span class="categoria-tag">Pinturas</span>
+                    </article>
+
+                    <article class="producto-card" data-categoria="electricidad">
+                        <div class="producto-imagen"><i class="fas fa-lightbulb"></i></div>
+                        <h3>Bombilla LED 9W</h3>
+                        <p class="producto-descripcion">Ahorro energetico, luz blanca.</p>
+                        <p class="producto-precio">$8.000</p>
+                        <span class="categoria-tag">Electricidad</span>
+                    </article>
+                    <article class="producto-card" data-categoria="electricidad">
+                        <div class="producto-imagen"><i class="fas fa-plug"></i></div>
+                        <h3>Extension electrica 5 m</h3>
+                        <p class="producto-descripcion">Tres tomas con cable reforzado.</p>
+                        <p class="producto-precio">$35.000</p>
+                        <span class="categoria-tag">Electricidad</span>
+                    </article>
+                    <article class="producto-card" data-categoria="electricidad">
+                        <div class="producto-imagen"><i class="fas fa-bolt"></i></div>
+                        <h3>Breaker 20 amperios</h3>
+                        <p class="producto-descripcion">Termomagnetico para proteccion de circuito.</p>
+                        <p class="producto-precio">$15.000</p>
+                        <span class="categoria-tag">Electricidad</span>
+                    </article>
+                    <article class="producto-card" data-categoria="electricidad">
+                        <div class="producto-imagen"><i class="fas fa-tape"></i></div>
+                        <h3>Cinta aislante 18 m</h3>
+                        <p class="producto-descripcion">Aislamiento electrico de alta adherencia.</p>
+                        <p class="producto-precio">$3.500</p>
+                        <span class="categoria-tag">Electricidad</span>
+                    </article>
+
+                    <article class="producto-card" data-categoria="construccion">
+                        <div class="producto-imagen"><i class="fas fa-cubes"></i></div>
+                        <h3>Cemento gris 50 kg</h3>
+                        <p class="producto-descripcion">Uso general para mezclas y obra civil.</p>
+                        <p class="producto-precio">$32.000</p>
+                        <span class="categoria-tag">Construccion</span>
+                    </article>
+                    <article class="producto-card" data-categoria="construccion">
+                        <div class="producto-imagen"><i class="fas fa-layer-group"></i></div>
+                        <h3>Bloque de cemento 15x20x40</h3>
+                        <p class="producto-descripcion">Bloque estructural para muro liviano.</p>
+                        <p class="producto-precio">$2.800</p>
+                        <span class="categoria-tag">Construccion</span>
+                    </article>
+                    <article class="producto-card" data-categoria="construccion">
+                        <div class="producto-imagen"><i class="fas fa-grip-lines-vertical"></i></div>
+                        <h3>Varilla 3/8" x 6 m</h3>
+                        <p class="producto-descripcion">Acero corrugado para refuerzo.</p>
+                        <p class="producto-precio">$28.000</p>
+                        <span class="categoria-tag">Construccion</span>
+                    </article>
+                    <article class="producto-card" data-categoria="construccion">
+                        <div class="producto-imagen"><i class="fas fa-link"></i></div>
+                        <h3>Alambre de amarre 1 kg</h3>
+                        <p class="producto-descripcion">Calibre 18 para estructura y formaleta.</p>
+                        <p class="producto-precio">$8.500</p>
+                        <span class="categoria-tag">Construccion</span>
+                    </article>
+
+                    <article class="producto-card" data-categoria="plomeria">
+                        <div class="producto-imagen"><i class="fas fa-faucet"></i></div>
+                        <h3>Llave de paso 1/2"</h3>
+                        <p class="producto-descripcion">Valvula esferica en bronce.</p>
+                        <p class="producto-precio">$25.000</p>
+                        <span class="categoria-tag">Plomeria</span>
+                    </article>
+                    <article class="producto-card" data-categoria="plomeria">
+                        <div class="producto-imagen"><i class="fas fa-pipe"></i></div>
+                        <h3>Tubo PVC sanitario 4"</h3>
+                        <p class="producto-descripcion">Tramo de 3 metros para desague.</p>
+                        <p class="producto-precio">$18.000</p>
+                        <span class="categoria-tag">Plomeria</span>
+                    </article>
+                    <article class="producto-card" data-categoria="plomeria">
+                        <div class="producto-imagen"><i class="fas fa-shower"></i></div>
+                        <h3>Grifo para lavamanos</h3>
+                        <p class="producto-descripcion">Acabado cromado, uso residencial.</p>
+                        <p class="producto-precio">$65.000</p>
+                        <span class="categoria-tag">Plomeria</span>
+                    </article>
+                    <article class="producto-card" data-categoria="plomeria">
+                        <div class="producto-imagen"><i class="fas fa-toilet-paper"></i></div>
+                        <h3>Cinta teflon 10 m</h3>
+                        <p class="producto-descripcion">Sellado de roscas sin fugas.</p>
+                        <p class="producto-precio">$2.500</p>
+                        <span class="categoria-tag">Plomeria</span>
+                    </article>
+
+                    <article class="producto-card" data-categoria="ferreteria">
+                        <div class="producto-imagen"><i class="fas fa-screw"></i></div>
+                        <h3>Tornillos para madera x100</h3>
+                        <p class="producto-descripcion">Medida 2 pulgadas para carpinteria.</p>
+                        <p class="producto-precio">$12.000</p>
+                        <span class="categoria-tag">Ferreteria</span>
+                    </article>
+                    <article class="producto-card" data-categoria="ferreteria">
+                        <div class="producto-imagen"><i class="fas fa-dot-circle"></i></div>
+                        <h3>Clavos acero 3" (libra)</h3>
+                        <p class="producto-descripcion">Ideal para madera y estructuras livianas.</p>
+                        <p class="producto-precio">$6.000</p>
+                        <span class="categoria-tag">Ferreteria</span>
+                    </article>
+                    <article class="producto-card" data-categoria="ferreteria">
+                        <div class="producto-imagen"><i class="fas fa-lock"></i></div>
+                        <h3>Candado de seguridad 50 mm</h3>
+                        <p class="producto-descripcion">Incluye tres llaves reforzadas.</p>
+                        <p class="producto-precio">$28.000</p>
+                        <span class="categoria-tag">Ferreteria</span>
+                    </article>
+                    <article class="producto-card" data-categoria="ferreteria">
+                        <div class="producto-imagen"><i class="fas fa-door-open"></i></div>
+                        <h3>Bisagras 3" (par)</h3>
+                        <p class="producto-descripcion">Acero inoxidable para puertas livianas.</p>
+                        <p class="producto-precio">$15.000</p>
+                        <span class="categoria-tag">Ferreteria</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabla-section" id="catalogo-completo">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Mas productos en formato liviano</h2>
+                    <p>Listado en tabla para que la pagina sea mas rapida y facil de consultar.</p>
+                </div>
+
+                <div class="tabla-wrap">
+                    <table class="productos-tabla" aria-label="Catalogo adicional de productos">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Categoria</th>
+                                <th>Unidad</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="producto-row" data-categoria="herramientas"><td>Alicate universal 8"</td><td>Herramientas</td><td>Unidad</td><td>$28.000</td></tr>
+                            <tr class="producto-row" data-categoria="herramientas"><td>Caja de herramientas 18"</td><td>Herramientas</td><td>Unidad</td><td>$45.000</td></tr>
+                            <tr class="producto-row" data-categoria="herramientas"><td>Nivel de burbuja 24"</td><td>Herramientas</td><td>Unidad</td><td>$42.000</td></tr>
+                            <tr class="producto-row" data-categoria="herramientas"><td>Sierra manual 20"</td><td>Herramientas</td><td>Unidad</td><td>$32.000</td></tr>
+
+                            <tr class="producto-row" data-categoria="pinturas"><td>Esmalte sintetico 1/4</td><td>Pinturas</td><td>Unidad</td><td>$35.000</td></tr>
+                            <tr class="producto-row" data-categoria="pinturas"><td>Thinner acrilico 1 galon</td><td>Pinturas</td><td>Unidad</td><td>$28.000</td></tr>
+                            <tr class="producto-row" data-categoria="pinturas"><td>Sellador de paredes</td><td>Pinturas</td><td>Galon</td><td>$45.000</td></tr>
+                            <tr class="producto-row" data-categoria="pinturas"><td>Pintura anticorrosiva</td><td>Pinturas</td><td>Galon</td><td>$62.000</td></tr>
+
+                            <tr class="producto-row" data-categoria="electricidad"><td>Bombilla LED 15W</td><td>Electricidad</td><td>Unidad</td><td>$12.000</td></tr>
+                            <tr class="producto-row" data-categoria="electricidad"><td>Tomacorriente doble</td><td>Electricidad</td><td>Unidad</td><td>$6.500</td></tr>
+                            <tr class="producto-row" data-categoria="electricidad"><td>Interruptor sencillo</td><td>Electricidad</td><td>Unidad</td><td>$5.000</td></tr>
+                            <tr class="producto-row" data-categoria="electricidad"><td>Cable calibre 12 (metro)</td><td>Electricidad</td><td>Metro</td><td>$2.500</td></tr>
+                            <tr class="producto-row" data-categoria="electricidad"><td>Cable calibre 14 (metro)</td><td>Electricidad</td><td>Metro</td><td>$2.000</td></tr>
+                            <tr class="producto-row" data-categoria="electricidad"><td>Socket E27</td><td>Electricidad</td><td>Unidad</td><td>$4.000</td></tr>
+
+                            <tr class="producto-row" data-categoria="construccion"><td>Arena lavada 40 kg</td><td>Construccion</td><td>Bulto</td><td>$8.000</td></tr>
+                            <tr class="producto-row" data-categoria="construccion"><td>Ladrillo tolete</td><td>Construccion</td><td>Unidad</td><td>$800</td></tr>
+                            <tr class="producto-row" data-categoria="construccion"><td>Gravilla 40 kg</td><td>Construccion</td><td>Bulto</td><td>$10.000</td></tr>
+                            <tr class="producto-row" data-categoria="construccion"><td>Cal hidratada 25 kg</td><td>Construccion</td><td>Bulto</td><td>$12.000</td></tr>
+
+                            <tr class="producto-row" data-categoria="plomeria"><td>Tubo PVC presion 1/2"</td><td>Plomeria</td><td>Tramo</td><td>$12.000</td></tr>
+                            <tr class="producto-row" data-categoria="plomeria"><td>Codo PVC 90 grados 1/2"</td><td>Plomeria</td><td>Unidad</td><td>$1.500</td></tr>
+                            <tr class="producto-row" data-categoria="plomeria"><td>Tee PVC sanitario 4"</td><td>Plomeria</td><td>Unidad</td><td>$5.500</td></tr>
+                            <tr class="producto-row" data-categoria="plomeria"><td>Sifon lavaplatos 1.5"</td><td>Plomeria</td><td>Unidad</td><td>$8.000</td></tr>
+                            <tr class="producto-row" data-categoria="plomeria"><td>Manguera flexible 1/2"</td><td>Plomeria</td><td>Unidad</td><td>$6.000</td></tr>
+
+                            <tr class="producto-row" data-categoria="ferreteria"><td>Tornillo drywall x100</td><td>Ferreteria</td><td>Caja</td><td>$10.000</td></tr>
+                            <tr class="producto-row" data-categoria="ferreteria"><td>Puntillas 2" (libra)</td><td>Ferreteria</td><td>Libra</td><td>$5.500</td></tr>
+                            <tr class="producto-row" data-categoria="ferreteria"><td>Cerradura de pomo</td><td>Ferreteria</td><td>Unidad</td><td>$45.000</td></tr>
+                            <tr class="producto-row" data-categoria="ferreteria"><td>Tuerca hexagonal 1/4" x50</td><td>Ferreteria</td><td>Caja</td><td>$8.000</td></tr>
+                            <tr class="producto-row" data-categoria="ferreteria"><td>Arandela plana 1/4" x100</td><td>Ferreteria</td><td>Caja</td><td>$6.000</td></tr>
+                            <tr class="producto-row" data-categoria="ferreteria"><td>Cadena galvanizada 1/4"</td><td>Ferreteria</td><td>Metro</td><td>$8.500</td></tr>
+
+                            <tr class="producto-row" data-categoria="venenos"><td>Insecticida en spray 400 ml</td><td>Venenos</td><td>Unidad</td><td>$12.000</td></tr>
+                            <tr class="producto-row" data-categoria="venenos"><td>Raticida en pellets 100 g</td><td>Venenos</td><td>Unidad</td><td>$8.000</td></tr>
+                            <tr class="producto-row" data-categoria="venenos"><td>Hormiguicida granulado</td><td>Venenos</td><td>Unidad</td><td>$10.000</td></tr>
+                            <tr class="producto-row" data-categoria="venenos"><td>Repelente de mosquitos</td><td>Venenos</td><td>Unidad</td><td>$6.000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="nota-precios">Precios de referencia. Escríbenos por WhatsApp para confirmar existencia y promociones por volumen.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Ferrocampo Pinillos</h3>
+                    <p>Ferreteria de confianza con surtido para hogar, obra y campo.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> +57 300 123 2763</p>
+                    <p><i class="fas fa-envelope"></i> info@ferrocampopinillos.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Pinillos, Bolivar, Colombia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horario</h3>
+                    <p>Lunes a viernes: 7:00 AM - 6:00 PM</p>
+                    <p>Sabados: 7:00 AM - 5:00 PM</p>
+                    <p>Domingos: Cerrado</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ferrocampo Pinillos. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573001232763?text=Hola,%20necesito%20informacion%20sobre%20productos%20de%20la%20ferreteria" class="whatsapp-float" target="_blank" title="Contactanos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Contacta al vendedor</span>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
